@@ -7,8 +7,98 @@ body{
     margin: 0;
     font-family: "Montserrat", sans-serif; 
     font-weight: 500;
-      font-size: 16px;
-     line-height: 160%;
-     color: white;
- }
- 
+}
+h1{
+    font-size: 3rem;
+    margin-bottom: 0;
+    font-weight: 700;
+}
+h2{
+    font-size: 2rem;
+    font-weight: 700;
+}
+a{
+    text-decoration: none;
+    color: var(--primary-blue);
+}
+a:hover{
+    text-decoration: underline;
+}
+.small{
+    font-size: 80%;
+    text-align: center;
+}
+.split-screen{
+display: flex;
+flex-direction: row;
+height: 100vh;
+}
+.left{
+    height: 250px;
+}
+.left,
+.right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: auto;
+}
+.left{
+    background: linear-gradient(
+         rgba(255, 255, 255, 0.301),
+         rgba( 255, 255, 255, 0.884));
+     background: url(images/1.png); 
+  background-size: cover;
+}
+.left .copy{
+   color: black;
+   text-align: center;
+}
+.left p{
+    font-size: 2rem;
+    font-weight: bold;
+}
+.right .copy{
+    color: black;
+    text-align: center;
+}
+.right form{
+    width: 330px;
+}
+form input[type="text"],
+form input[type="email"],
+form input[type="password"] {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 5px;
+    border: 1px solid #c4c4c4;
+    padding: 1em;
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+}
+label{
+    display: block;
+    margin-bottom: 0.5rem;
+    font-size: 12px;
+}
+.error-message{
+    color: red;
+    font-size: 12px;
+}
+.checkbox-container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+.checkbox-container{
+display: block;
+position: relative;
+padding-left: 2rem;
+cursor: pointer;
+user-select: none;
+margin: 0 0 1.2rem;
+}
