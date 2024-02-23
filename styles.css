@@ -1,6 +1,6 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap')
 :root{
- --primary-blue:#233975
+ --primary-blue:#233975;
 }
 body{
     padding: 0;
@@ -41,8 +41,6 @@ height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 50%;
-    height: auto;
 }
 .left{
     background: linear-gradient(
@@ -52,8 +50,9 @@ height: 100vh;
   background-size: cover;
 }
 .left .copy{
-   color: black;
    text-align: center;
+   --webkit-font-smoothing: antialiased;
+   --moz-osx-font-smoothing: grayscale;
 }
 .left p{
     font-size: 2rem;
@@ -62,6 +61,10 @@ height: 100vh;
 .right .copy{
     color: black;
     text-align: center;
+}
+.right .copy p{
+    margin: 1.5rem;
+    font-size: 1rem;
 }
 .right form{
     width: 330px;
@@ -75,13 +78,13 @@ form input[type="password"] {
     border-radius: 5px;
     border: 1px solid #c4c4c4;
     padding: 1em;
-    margin-bottom: 0.5rem;
+    margin-bottom: 1.3rem;
     font-size: 1rem;
 }
 label{
     display: block;
     margin-bottom: 0.5rem;
-    font-size: 12px;
+    font-size: 1rem;
 }
 .error-message{
     color: red;
@@ -123,7 +126,7 @@ margin: 0 0 1.2rem 0;
     display: none;
 }
 .checkbox-container input:checked~
-.checkmark::after{
+.checkmark:after{
     display: block;
 }
 .checkbox-container .checkmark::after{
@@ -152,6 +155,14 @@ margin: 0 0 1.2rem 0;
     background: #4f6ec2;
     cursor: pointer;
 }
+/* .right{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+} */
+
+
 @media screen and (min-width: 900px){
     .split-screen{
      flex-direction: row;
@@ -172,6 +183,7 @@ margin: 0 0 1.2rem 0;
             rgba(0, 0, 0, 0.993) ),
             url("images/1.png");   
     }
+   
     .left p {
         color: aliceblue;
     }
