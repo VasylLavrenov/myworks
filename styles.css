@@ -213,6 +213,7 @@ a:hover {
     align-items: center;
     height: 1373px;
     flex-shrink: 0;
+    gap: 20px;
 }
 
 .two-t1 {
@@ -257,6 +258,7 @@ a:hover {
     font-style: normal;
     font-weight: 700;
     line-height: normal;
+    cursor: pointer;
 }
 
 .two-nav-2 {
@@ -272,6 +274,7 @@ a:hover {
     font-style: normal;
     font-weight: 700;
     line-height: normal;
+    cursor: pointer;
 }
 
 .two-img {
@@ -291,7 +294,11 @@ a:hover {
     flex-shrink: 0;
 }
 
-.boy {}
+.boy {
+    width: 1056px;
+height: 390px;
+padding: 8px 8px 8px 0px; 
+}
 
 .arrow {
     width: 47px;
@@ -302,8 +309,9 @@ a:hover {
 .two-cards {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
+    width: 100%;
 }
 
 .card-first {
@@ -328,29 +336,115 @@ a:hover {
 }
 
 .color-card-first {
-    width: 439px;
+    width: 435px;
     height: 107px;
     flex-shrink: 0;
     background-color: #FFE9AD;
     border-radius: 40px 40px 0 0;
 }
 
-.orange-card {}
+.orange-card {
+  display: flex; 
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 435px;
+  position: relative;
+  bottom: 40px;
+  gap: 20px;
+}
 
-.card-t1 {}
+.card-t1 {
+    width: 408px;
+height: 72px;
+padding: 8px; 
+    color: #16598E;
+font-family: Heebo;
+font-size: 36px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+border-radius: 10px;
+background: #EDD185;
+display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-.card-t2 {}
+.card-t2 {
+    color: #343A3D;
+font-family: Heebo;
+font-size: 20px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+}
+.card-t3 {
+    color: #16598E;
+font-family: Heebo;
+font-size: 24px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+display: flex;
+  gap: 15px;
+  cursor: pointer;
+}
+/* .card-t3:hover{
+   text-decoration: underline;
+} */
+.card-second {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 432px;
+    height: 378px;
+    flex-shrink: 0;
+    border-radius: 40px;
+    background: #F3F1F1;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
 
-.card-2 {}
+.card-second-1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
 
-.card-t3 {}
+.color-card-second {
+    width: 435px;
+    height: 107px;
+    flex-shrink: 0;
+    background-color: #FFE9AD;
+    border-radius: 40px 40px 0 0; 
+}
 
-.card-second {}
+.blue-card {
+    display: flex; 
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 435px;
+  position: relative;
+  bottom: 40px;
+  gap: 20px;
+}
 
-.card-second-1 {}
-
-.card-color-second {}
-
-.blue-card {}
-
-.card-t4 {}
+.card-t4 {
+    width: 408px;
+    height: 72px;
+    padding: 8px; 
+        color: #16598E;
+    font-family: Heebo;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    border-radius: 10px;
+    background: #EDD185;
+    display: flex;
+      justify-content: center;
+      align-items: center;
+}
